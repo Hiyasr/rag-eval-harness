@@ -1,0 +1,15 @@
+{"question": "What Python version does Fluxo require?", "evidence": "requires Python 3.9 or newer", "reference": "Fluxo requires Python 3.9 or newer."}
+{"question": "How do I install Fluxo?", "evidence": "pip install fluxo-cli", "reference": "Run pip install fluxo-cli."}
+{"question": "How can I check that Fluxo installed correctly?", "evidence": "Run fluxo --version", "reference": "Run fluxo --version, which prints the installed version."}
+{"question": "What is the config file called?", "evidence": "file called fluxo.toml", "reference": "The config file is fluxo.toml."}
+{"question": "Where does Fluxo look if fluxo.toml is missing?", "evidence": "FLUXO_HOME environment variable", "reference": "It looks in the folder given by the FLUXO_HOME environment variable."}
+{"question": "What is the default connection timeout?", "evidence": "default connection timeout is 30 seconds", "reference": "The default connection timeout is 30 seconds."}
+{"question": "How should I provide database passwords?", "evidence": "reads passwords from environment variables", "reference": "Use environment variables named FLUXO_PASSWORD_ plus the connection name in uppercase, never fluxo.toml."}
+{"question": "How do I preview a sync without changing data?", "evidence": "Add the --dry-run flag", "reference": "Add the --dry-run flag."}
+{"question": "What is the default batch size?", "evidence": "batches of 5000", "reference": "The default batch size is 5000 rows."}
+{"question": "Where is the last incremental run time stored?", "evidence": "file named .fluxo_state", "reference": "In a file named .fluxo_state in the project directory."}
+{"question": "What does error E204 mean?", "evidence": "database did not respond before the timeout expired", "reference": "A database did not respond before the timeout expired."}
+{"question": "How do I see differences between source and target schemas?", "evidence": "fluxo schema diff", "reference": "Run fluxo schema diff."}
+{"question": "How many times are failed jobs retried?", "evidence": "retried up to 3 times", "reference": "Failed jobs are retried up to 3 times."}
+{"question": "How long are log files kept?", "evidence": "older than 14 days are deleted", "reference": "Log files older than 14 days are deleted automatically."}
+{"question": "Does Fluxo have a built-in scheduler?", "evidence": "no built-in scheduler", "reference": "No, use cron or a workflow tool."}
