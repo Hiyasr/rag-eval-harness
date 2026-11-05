@@ -1,0 +1,16 @@
+[project]
+name = "ragkit"
+version = "0.1.0"
+description = "RAG system with hybrid retrieval, reranking and a measurable evaluation harness"
+requires-python = ">=3.10"
+dependencies = ["numpy", "faiss-cpu", "fastapi", "uvicorn", "anthropic", "pydantic"]
+
+[project.optional-dependencies]
+dense = ["sentence-transformers"]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["ragkit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

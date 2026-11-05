@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Secrets (never commit these)
+.env
+*.key
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+data/corpus/
