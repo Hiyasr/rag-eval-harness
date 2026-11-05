@@ -1,0 +1,116 @@
+{
+  "recall@5": 0.9333333333333333,
+  "faithfulness": 1.0,
+  "correctness": 0.4666666666666667,
+  "latency_p50_s": 0.00022124699999892528,
+  "latency_p95_s": 0.0003451850000004697,
+  "judge": "lexical-fallback",
+  "n": 15,
+  "rows": [
+    {
+      "question": "What Python version does Fluxo require?",
+      "answer": "[Verify the installation] Run `fluxo --version` to confirm the installation. [3]",
+      "hit_rank": null,
+      "faithful": true,
+      "correct": false
+    },
+    {
+      "question": "How do I install Fluxo?",
+      "answer": "[Install with pip] Run `pip install fluxo-cli` to install the latest release. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": true
+    },
+    {
+      "question": "How can I check that Fluxo installed correctly?",
+      "answer": "[Verify the installation] Run `fluxo --version` to confirm the installation. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": false
+    },
+    {
+      "question": "What is the config file called?",
+      "answer": "[Config file location] If fluxo.toml is not found, Fluxo looks in the folder given by the FLUXO_HOME environment variable. [1]",
+      "hit_rank": 3,
+      "faithful": true,
+      "correct": false
+    },
+    {
+      "question": "Where does Fluxo look if fluxo.toml is missing?",
+      "answer": "[Config file location] If fluxo.toml is not found, Fluxo looks in the folder given by the FLUXO_HOME environment variable. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": true
+    },
+    {
+      "question": "What is the default connection timeout?",
+      "answer": "The default connection timeout is 30 seconds, and it can be changed with the timeout_seconds key. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": true
+    },
+    {
+      "question": "How should I provide database passwords?",
+      "answer": "[Secrets] Never store passwords in fluxo.toml. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": false
+    },
+    {
+      "question": "How do I preview a sync without changing data?",
+      "answer": "[Installing Fluxo] Fluxo is a command line tool for running data sync jobs between databases. [1]",
+      "hit_rank": 4,
+      "faithful": true,
+      "correct": false
+    },
+    {
+      "question": "What is the default batch size?",
+      "answer": "[Batch size] By default Fluxo copies rows in batches of 5000. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": true
+    },
+    {
+      "question": "Where is the last incremental run time stored?",
+      "answer": "The last run time is stored in a file named .fluxo_state in the project directory. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": true
+    },
+    {
+      "question": "What does error E204 mean?",
+      "answer": "[E204 Connection timeout] E204 means a database did not respond before the timeout expired. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": true
+    },
+    {
+      "question": "How do I see differences between source and target schemas?",
+      "answer": "[Basic sync] Use `fluxo sync --source prod --target warehouse` to copy tables from the source connection to the target connection. [1]",
+      "hit_rank": 2,
+      "faithful": true,
+      "correct": false
+    },
+    {
+      "question": "How many times are failed jobs retried?",
+      "answer": "[Retries] Failed jobs are retried up to 3 times with a delay that doubles after each attempt, starting at 2 seconds. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": true
+    },
+    {
+      "question": "How long are log files kept?",
+      "answer": "[Log files] Logs are written to the logs folder in the project directory. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": false
+    },
+    {
+      "question": "Does Fluxo have a built-in scheduler?",
+      "answer": "[Running on a schedule] Fluxo has no built-in scheduler. [1]",
+      "hit_rank": 1,
+      "faithful": true,
+      "correct": false
+    }
+  ]
+}
